@@ -1,3 +1,4 @@
+% !TeX root = resume.tex
 %-------------------------
 % Sam Bock Resume
 % Author : Sam Bock
@@ -73,8 +74,8 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://sambock.tech/}{\Large Sam Bock}} & Email : \href{mailto:sam@sambock.tech}{sam@sambock.tech}\\
-  \href{https://www.sambock.tech}{https://www.sambock.tech} & Mobile : +1-123-456-7890 \\
+  \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{mail@website.com}\\
+  \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
 \end{tabular*}
 
 
