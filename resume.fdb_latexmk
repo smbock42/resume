@@ -1,9 +1,11 @@
 # Fdb version 4
-["pdflatex"] 1701246310 "/Users/sambock/Documents/resume/resume.tex" "resume.pdf" "resume" 1701246311 0
-  "/Users/sambock/Documents/resume/resume.tex" 1701246309 5596 16fceb8c5bc9473f91062ebd4b1f8495 ""
+["pdflatex"] 1701285835 "/Users/sambock/Documents/resume/resume.tex" "resume.pdf" "resume" 1701285836 0
+  "/Users/sambock/Documents/resume/resume.tex" 1701285833 5653 14d4cdf47e63a66793d0b06b617192ae ""
   "/Users/sambock/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map" 1699072226 80937 91001db6d4ae332437b4b739862cda02 ""
+  "/Users/sambock/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1699072230 11548 57723b53fedf741b49e1e8b884234c48 ""
   "/Users/sambock/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1699072231 12668 51e6584ac68446c75ec9d4ffcffba371 ""
   "/Users/sambock/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1699072077 24213024 bc45f857dafbc1c8ffdb8454593bbaad ""
+  "/Users/sambock/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1699063680 1436 c7f957a372ef2fbe93c0982f96625e12 ""
   "/Users/sambock/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1699063680 1460 8005ce585ff351dff78998923504da5e ""
   "/Users/sambock/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx10.tfm" 1699063672 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/Users/sambock/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm" 1699063672 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -76,9 +78,9 @@
   "/Users/sambock/Library/Application Support/MiKTeX/texmfs/install/tex/latex/titlesec/titlesec.sty" 1699072097 48997 46e2c3ce6f6b1af37e656abbe4e671c9 ""
   "/Users/sambock/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/verbatim.sty" 1699063699 7392 ed69c044ab18d5539723c1c7b8c2ee88 ""
   "/Users/sambock/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty" 1699063748 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "resume.aux" 1701246310 595 91bc3f173b3a760a7e8e349ea0086c59 "pdflatex"
-  "resume.out" 1701246310 400 aeec9d5489ba887d416e12a4924ddacb "pdflatex"
-  "resume.tex" 1701246309 5596 16fceb8c5bc9473f91062ebd4b1f8495 ""
+  "resume.aux" 1701285836 595 91bc3f173b3a760a7e8e349ea0086c59 "pdflatex"
+  "resume.out" 1701285836 400 aeec9d5489ba887d416e12a4924ddacb "pdflatex"
+  "resume.tex" 1701285833 5653 14d4cdf47e63a66793d0b06b617192ae ""
   (generated)
   "resume.aux"
   "resume.log"

@@ -139,10 +139,13 @@ INPUT /Users/sambock/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm
 INPUT /Users/sambock/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmti10.tfm
 INPUT /Users/sambock/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmti10.tfm
 INPUT /Users/sambock/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /Users/sambock/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT /Users/sambock/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map
 INPUT resume.aux
 INPUT ./resume.out
 INPUT ./resume.out
+INPUT /Users/sambock/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk
+INPUT /Users/sambock/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk
 INPUT /Users/sambock/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk
 INPUT /Users/sambock/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk
 INPUT /Users/sambock/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
