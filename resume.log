@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.3)  29 NOV 2023 23:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.3)  30 NOV 2023 00:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -256,8 +256,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 85.
 
-Underfull \hbox (badness 1496) in paragraph at lines 167--167
-\OT1/cmr/m/n/10.95 Ma-cOS, Win-dows, Mi-crosoft Azure, Ama-zon AWS,
+Underfull \hbox (badness 3209) in paragraph at lines 164--164
+[]\OT1/cmr/bx/n/10.95 Languages: \OT1/cmr/m/n/10.95 Python, SQL, Java, C, C++,
  []
 
 
@@ -280,15 +280,15 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: 24B4DD06B1FA907D9564B45521FE7CD9;640.
  ) 
 Here is how much of TeX's memory you used:
- 9474 strings out of 474718
- 149600 string characters out of 5739045
+ 9476 strings out of 474718
+ 149658 string characters out of 5739045
  1951033 words of memory out of 5000000
- 31421 multiletter control sequences out of 15000+600000
+ 31423 multiletter control sequences out of 15000+600000
  564337 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,442b,441s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,442b,443s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/sambock/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk> </Users/sambock/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk></Users/sambock/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/sambock/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/sambock/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></Users/sambock/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/sambock/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/sambock/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on resume.pdf (1 page, 106531 bytes).
+Output written on resume.pdf (1 page, 106555 bytes).
 PDF statistics:
  78 PDF objects out of 1000 (max. 8388607)
  7 named destinations out of 1000 (max. 500000)
