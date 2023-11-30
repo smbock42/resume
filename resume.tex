@@ -56,6 +56,13 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeCampusInvolvement}[3]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1}, #2 & #3 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
@@ -85,7 +92,7 @@
     \resumeSubheading
       {California Polytechnic State University, San Luis Obispo}{San Luis Obispo, GA}
       {Bachelor of Science in Computer Science;  GPA: 3.76}{Sept. 2021 -- June. 2025}\\[3mm]
-      \textbf{Relevant Coursework:} Project-Based Object Oriented Programming and Design, Discrete Structures, Intro to Software Engineering, Systems Programming, Intro to Computer Organization, Data Structures, Design and Analysis of Algorithms, Intro to Database Systems
+      \textbf{Relevant Coursework:} Intro to Database Systems, Design and Analysis of Algorithms, Project-Based Object Oriented Programming and Design, Systems Programming, Discrete Structures, Intro to Software Engineering, Intro to Computer Organization, Data Structures, Intro to Computing: Security, Fundamentals of Computer Science
   \resumeSubHeadingListEnd
 
 
@@ -125,6 +132,7 @@
           {Analyze and take action against suspicious logins, phishing emails, and network traffic using Splunk, Microsoft Azure, and other security tools.}
         \resumeItem{Slack App Development}
           {Developed a Python-based Slack app to automate email, suppression, and blocking procedures.}
+        \resumeItem{Technologies Used}{Splunk, Python, Slack API, Linux}
        
         
       \resumeItemListEnd
@@ -139,9 +147,17 @@
   \resumeSubHeadingListStart
     \resumeSubItem{Plan2Gather}{Developed web app that allows users to create events and analyzes best times to meet based on attendees.}
     \resumeSubItem{Custom PC Builder and Trader}{Maintained PostgreSQL database of computer parts and integrated with Python fastAPI backend to allow for selling and purchasing of parts.}
+    \resumeSubItem{Wash Alerter (Hackathon)}{Built a Python program that scraps data off of Cal Poly's laundry website and alerts users when washers and dryers are available.}
   \resumeSubHeadingListEnd
 
-%
+%-----------LEADERSHIP-----------------
+\section{Campus Involvement and Volunteer Work}
+  \resumeSubHeadingListStart
+    \resumeCampusInvolvement{Cal Poly Security Club}{Member}{12/2022 - Present}
+    \resumeCampusInvolvement{Computer Engineering Society}{Member}{9/2021 - Present}
+    \resumeCampusInvolvement{SLO Hillel}{President}{9/2021 - Present}    
+    \resumeCampusInvolvement{Youth Leaders of Menifee}{President}{8/2019 - 6/2021}
+  \resumeSubHeadingListEnd
 %--------PROGRAMMING SKILLS------------
 \section{Programming Skills}
 \resumeSubHeadingListStart
