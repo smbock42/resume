@@ -15,7 +15,6 @@
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 
-
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -56,17 +55,8 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeCampusInvolvement}[3]{
-  \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1}, #2 & #3 \\
-    \end{tabular*}\vspace{-5pt}
-}
-
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
-
 \renewcommand{\labelitemii}{$\circ$}
-
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
@@ -75,31 +65,17 @@
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
-
 
 %----------HEADING-----------------
 \begin{center}
   \textbf{\Huge \ \scshape Sam Bock} \\ \vspace{3pt}
    \href{mailto:sabock@calpoly.edu}{sabock@calpoly.edu} $|$ \small 909-609-9291 $|$ \href{https://www.sambock.dev}{sambock.dev} $|$ \href{https://www.linkedin.com/in/smbock42}{linkedin.com/in/smbock42} $|$ \href{https://www.github.com/smbock42}{github.com/smbock42}
-
 \end{center}
 
-%-----------SUMMARY-----------------
-\section{Summary}
-\small{Software engineer with hands-on experience in full-stack development, AI/ML research, and cybersecurity automation. Passionate about building scalable applications, optimizing workflows, and solving real-world problems with cutting-edge technology. Proficient in cloud platforms, security automation, and database-driven applications, with a track record of delivering impactful results.}
-
-
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {California Polytechnic State University, San Luis Obispo}{San Luis Obispo, CA}
-      {Bachelor of Science in Computer Science;  GPA: 3.7}{Sept. 2021 -- June. 2025}\\[3mm]
-      \textbf{Relevant Coursework:} Deep Learning, Distributed Computing, Database Systems, Data Science, Algorithms, Computer Security, Software Engineering, Systems Programming, Operating Systems, Programming Languages, \\Mobile App Development
-  \resumeSubHeadingListEnd
-
+%-----------ABOUT ME-----------------
+\section{About Me}
+Passionate software engineer with experience in full-stack development, AI/ML, and cybersecurity automation. Strong focus on designing scalable solutions, optimizing workflows, and solving real-world problems with modern technologies. Enjoys tackling challenging engineering problems and streamlining manual processes.
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
@@ -109,71 +85,61 @@
       {Software Engineering Intern}{Sunnyvale, CA}
       {Lockheed Martin Space}{June 2024 -- Present}
       \resumeItemListStart
-        \resumeItem{Full Stack Development}
-          {Developed a web application for managing project reviews, enabling stakeholders to create, assign, and track reviews in real-time.}
-        \resumeItem{Project Management}
-          {Managed end-to-end project lifecycle, including approvals process and setting up development environments.}
+        \resumeItem{Automated SME Search System}
+          {Designed and developed a full-stack web application to automate SME (subject matter expert) search and review assignment, replacing manual Excel tracking and coordination. Integrated data from multiple sources using APIs and cron jobs, with a Linux service running behind Nginx.}
+        \resumeItem{Project Ownership}
+          {Led the project end-to-end: proposal approvals, server provisioning, system architecture, UI/UX design, backend API development, and deployment. Addressed security reviews, optimized slow server performance, and iterated based on customer feedback.}
         \resumeItem{Technologies Used}
-          {Next.js, TypeScript, Prisma, Supabase, Tailwind CSS}
+          {Next.js, TypeScript, Prisma, Supabase, Tailwind CSS, Linux, Nginx}
       \resumeItemListEnd
 
-      \resumeSubheading
+    \resumeSubheading
       {AI/ML Research Intern}{Sunnyvale, CA}
       {Lockheed Martin Space}{June 2023 -- Oct 2023}
       \resumeItemListStart
-        \resumeItem{Object Detection and Computer Vision}
-          {Developed models for detecting anomalies in satellite data.}
-        \resumeItem{Model Optimization}
-          {Enhanced model performance by fine-tuning parameters and implementing data augmentation strategies.}
+        \resumeItem{Low-Light Object Detection}
+          {Independently improved low-light object detection through hyperparameter tuning and data augmentation techniques (blur, rotation, etc.). Developed a custom data loader to improve model robustness.}
+        \resumeItem{Evaluation and Impact}
+          {Enhanced detection accuracy in test environments but real-world impact was not measured due to IRAD research scope.}
         \resumeItem{Technologies Used}
           {Python, TensorFlow, Keras, OpenCV, Jupyter Notebooks}
       \resumeItemListEnd
 
-      \resumeSubheading
+    \resumeSubheading
       {IT Engineering Intern}{San Luis Obispo, CA}
       {HaptX Inc.}{Mar 2023 -- June 2023}
       \resumeItemListStart
-        \resumeItem{Conditional Access Policies}
-          {Hardened existing conditional access policies to enhance security based on user risk factors.}
-        \resumeItem{Hardware Management}{Repaired, upgraded, and optimized company workspaces and hardware.}
+        \resumeItem{Security Policy Enhancement}
+          {Implemented country-based IP restrictions, converting an open list to a whitelist approach. Enhanced authentication measures for high-risk regions and developed an analytics dashboard tracking login attempts and policy enforcement.}
         \resumeItem{Technologies Used}
           {Microsoft Azure, Microsoft Intune}
-        
       \resumeItemListEnd
 
     \resumeSubheading
       {Junior Security Operations Center Analyst}{San Luis Obispo, CA}
       {Cal Poly Information Technology Services}{June 2022 -- Feb 2023}
       \resumeItemListStart
-        \resumeItem{Security Incident Response}
-          {Analyze and take action against suspicious logins, phishing emails, and network traffic using Splunk, Microsoft Azure, and other security tools.}
-        \resumeItem{Analyst Action Automator}
-          {Developed a tool to automate incident response tasks, reducing total execution time by 80\%}
-        \resumeItem{Technologies Used}{Splunk, Python, Slack API, Linux, Splunk Soar Playgrounds}
-       
-        
+        \resumeItem{Security Automation}
+          {Developed a Slack bot integrated with Splunk SOAR to automate incident response tasks. Reduced analyst processing time from several minutes to under one minute, handling phishing emails, suspicious logins, and account suspension workflows.}
+        \resumeItem{Incident Handling}
+          {Processed 50-200 security incidents daily for a university with over 20,000 students and employees. The automation system significantly reduced manual workload.}
+        \resumeItem{Technologies Used}{Splunk, Python, Slack API, Linux, Splunk SOAR}
       \resumeItemListEnd
 
-
-
   \resumeSubHeadingListEnd
-
 
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Plan2Gather}{Developed web app that allows users to create events and analyzes best times to meet based on a group of inputs. Built using Vite, Nx, Cloudflare KV. \href{https://plan2gather.net}{Website: plan2gather.net} }
-    \resumeSubItem{Portfolio Website}{Built a portfolio website using Next.js, TypeScript, and Tailwind CSS. \href{https://sambock.dev}{Website: sambock.dev}}
-    \resumeSubItem{HomeLab}{Configured a home server using Cloudflare Zero Trust hosting a suite of applications.}
-    \resumeSubItem{Custom PC Builder and Trader}{Developed a web app using PostgreSQL and Python fastAPI for building and trading PCs and PC parts. \href{https://github.com/AdamDelRio/Custom-PC-Builder-and-Trader}{Github: https://github.com/AdamDelRio/Custom-PC-Builder-and-Trader}}
-
+    \resumeSubItem{Plan2Gather}{Developed a collaborative event scheduling app that finds optimal meeting times based on user availability. Used Vite, Nx, and Cloudflare KV.}
+    \resumeSubItem{Custom PC Builder and Trader}{Built a web application enabling users to create and trade custom PC builds. Backend powered by PostgreSQL and FastAPI.}
+    \resumeSubItem{HomeLab}{Designed and deployed a home server with Cloudflare Zero Trust to host self-hosted applications securely.}
+    \resumeSubItem{Portfolio Website}{Built a portfolio website using Next.js, TypeScript, and Tailwind CSS.}
   \resumeSubHeadingListEnd
 
 %--------PROGRAMMING SKILLS------------
 \section{Skills}
-
 \textbf{Languages:} Python, SQL, TypeScript, Tailwind CSS, Java, C, C++\\
-\textbf{Skills:} Git, Linux, Next.js, React.js, Node.js, Microsoft Azure, Docker, Supabase, Jira, Splunk,\\ Testing and Debugging, Agile Development, Scrum Methodology
+\textbf{Technologies:} Next.js, React, Node.js, Microsoft Azure, Docker, Supabase, Git, Linux, Splunk, Agile Development, Testing and Debugging
 
-%-------------------------------------------
 \end{document}
