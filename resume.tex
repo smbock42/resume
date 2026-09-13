@@ -12,7 +12,7 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[pdftex]{hyperref}
+\usepackage{hyperref}
 \usepackage{fancyhdr}
 
 \pagestyle{fancy}
@@ -73,73 +73,69 @@
    \href{mailto:sabock@calpoly.edu}{sabock@calpoly.edu} $|$ \small 909-609-9291 $|$ \href{https://www.sambock.dev}{sambock.dev} $|$ \href{https://www.linkedin.com/in/smbock42}{linkedin.com/in/smbock42} $|$ \href{https://www.github.com/smbock42}{github.com/smbock42}
 \end{center}
 
-%-----------ABOUT ME-----------------
-\section{About Me}
-Passionate software engineer with experience in full-stack development, AI/ML, and cybersecurity automation. Strong focus on designing scalable solutions, optimizing workflows, and solving real-world problems with modern technologies. Enjoys tackling challenging engineering problems and streamlining manual processes.
 
-%-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
-
     \resumeSubheading
-      {Software Engineering Intern}{Sunnyvale, CA}
-      {Lockheed Martin Space}{June 2024 -- Present}
+      {Software Engineer}{June 2025 -- Present}
+      {Apple -- IS\&T, ETS Emerging Tech}{Full-time}
       \resumeItemListStart
-        \resumeItem{Automated SME Search System}
-          {Designed and developed a full-stack web application to automate SME (subject matter expert) search and review assignment, replacing manual Excel tracking and coordination. Integrated data from multiple sources using APIs and cron jobs, with a Linux service running behind Nginx.}
-        \resumeItem{Project Ownership}
-          {Led the project end-to-end: proposal approvals, server provisioning, system architecture, UI/UX design, backend API development, and deployment. Addressed security reviews, optimized slow server performance, and iterated based on customer feedback.}
-        \resumeItem{Technologies Used}
-          {Next.js, TypeScript, Prisma, Supabase, Tailwind CSS, Linux, Nginx}
+        \resumeItem{Continuous Delivery}
+          {Own API Hub continuous delivery with Spinnaker: build-once/promote-many releases, ephemeral regression environments, promotion, and rollback. Deliver from tag creation through full regression testing and deployment in approximately 25--30 minutes, without manual commands.}
+        \resumeItem{Service Mesh Architecture}
+          {Research and prototype multi-tenant service mesh designs, evaluating Envoy, Istio, Consul, and Kuma. Develop observability with OpenTelemetry, Jaeger, and topology, trace, log, and metric interfaces.}
+        \resumeItem{API Platform}
+          {Contribute backend endpoints, gateway authentication hardening, and server-side rendering improvements for a company-wide API platform. Help migrate customers from legacy API Exchange and Stratos web services.}
+        \resumeItem{Production Infrastructure}
+          {Maintain diagnostic sanitization software with the Radar team; deliver production fixes and support managed-cluster migrations and Kubernetes/EKS node upgrades.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {AI/ML Research Intern}{Sunnyvale, CA}
-      {Lockheed Martin Space}{June 2023 -- Oct 2023}
+      {Software Engineering Intern}{June 2024 -- June 2025}
+      {Lockheed Martin Space}{Sunnyvale, CA}
       \resumeItemListStart
-        \resumeItem{Low-Light Object Detection}
-          {Independently improved low-light object detection through hyperparameter tuning and data augmentation techniques (blur, rotation, etc.). Developed a custom data loader to improve model robustness.}
-        \resumeItem{Evaluation and Impact}
-          {Enhanced detection accuracy in test environments but real-world impact was not measured due to IRAD research scope.}
-        \resumeItem{Technologies Used}
-          {Python, TensorFlow, Keras, OpenCV, Jupyter Notebooks}
+        \resumeItem{Full-Stack Ownership}
+          {Built a subject matter expert search and review-assignment application, replacing spreadsheet coordination. Owned proposal, architecture, UI, backend APIs, server provisioning, security reviews, and deployment.}
+        \resumeItem{Implementation}
+          {Integrated source data through APIs and scheduled jobs using Next.js, TypeScript, Prisma, and Supabase; deployed a Linux service behind Nginx and iterated on customer feedback.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {IT Engineering Intern}{San Luis Obispo, CA}
-      {HaptX Inc.}{Mar 2023 -- June 2023}
+      {AI/ML Research Intern}{June 2023 -- Oct 2023}
+      {Lockheed Martin Space}{Sunnyvale, CA}
       \resumeItemListStart
-        \resumeItem{Security Policy Enhancement}
-          {Implemented country-based IP restrictions, converting an open list to a whitelist approach. Enhanced authentication measures for high-risk regions and developed an analytics dashboard tracking login attempts and policy enforcement.}
-        \resumeItem{Technologies Used}
-          {Microsoft Azure, Microsoft Intune}
+        \resumeItem{Computer Vision}
+          {Researched low-light object detection using Python, TensorFlow, Keras, and OpenCV. Developed a custom data loader and evaluated data augmentation and hyperparameter tuning in an internal research setting.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Junior Security Operations Center Analyst}{San Luis Obispo, CA}
-      {Cal Poly Information Technology Services}{June 2022 -- Feb 2023}
+      {IT Engineering Intern}{Mar 2023 -- June 2023}
+      {HaptX Inc.}{San Luis Obispo, CA}
+      \resumeItemListStart
+        \resumeItem{Identity and Access}
+          {Implemented country-based access restrictions and authentication policies; built login-activity and policy-enforcement analytics using Microsoft Azure and Intune.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Junior Security Operations Center Analyst}{June 2022 -- Feb 2023}
+      {Cal Poly Information Technology Services}{San Luis Obispo, CA}
       \resumeItemListStart
         \resumeItem{Security Automation}
-          {Developed a Slack bot integrated with Splunk SOAR to automate incident response tasks. Reduced analyst processing time from several minutes to under one minute, handling phishing emails, suspicious logins, and account suspension workflows.}
-        \resumeItem{Incident Handling}
-          {Processed 50-200 security incidents daily for a university with over 20,000 students and employees. The automation system significantly reduced manual workload.}
-        \resumeItem{Technologies Used}{Splunk, Python, Slack API, Linux, Splunk SOAR}
+          {Built a Python Slack bot integrated with Splunk SOAR for phishing, suspicious-login, and account workflows, reducing analyst processing time from several minutes to under one minute.}
+        \resumeItem{Incident Response}
+          {Handled 50--200 security incidents daily for a university community of over 20,000 students and employees.}
       \resumeItemListEnd
-
   \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Plan2Gather}{Developed a collaborative event scheduling app that finds optimal meeting times based on user availability. Used Vite, Nx, and Cloudflare KV.}
-    \resumeSubItem{Custom PC Builder and Trader}{Built a web application enabling users to create and trade custom PC builds. Backend powered by PostgreSQL and FastAPI.}
-    \resumeSubItem{HomeLab}{Designed and deployed a home server with Cloudflare Zero Trust to host self-hosted applications securely.}
-    \resumeSubItem{Portfolio Website}{Built a portfolio website using Next.js, TypeScript, and Tailwind CSS.}
+    \resumeSubItem{\href{https://github.com/smbock42/homelab}{Homelab}}
+      {Operate a home environment for self-hosted applications, infrastructure experiments, and hosted agents, using containers and Cloudflare Zero Trust.}
   \resumeSubHeadingListEnd
 
-%--------PROGRAMMING SKILLS------------
 \section{Skills}
-\textbf{Languages:} Python, SQL, TypeScript, Tailwind CSS, Java, C, C++\\
-\textbf{Technologies:} Next.js, React, Node.js, Microsoft Azure, Docker, Supabase, Git, Linux, Splunk, Agile Development, Testing and Debugging
+\textbf{Languages:} Python, TypeScript, SQL, Java, C, C++\\
+\textbf{AI/ML:} TensorFlow, Keras, OpenCV, Jupyter\\
+\textbf{Platforms:} React, Next.js, Node.js, Kubernetes, EKS, Docker, Envoy, Spinnaker, OpenTelemetry, Jaeger, Linux, Git, Azure, Splunk
 
 \end{document}
