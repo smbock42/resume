@@ -1,13 +1,13 @@
 # Status
 
 ## Updated
-2026-09-13 — Apple experience added and PDF rebuilt.
+2026-09-13 — Apple CI/CD wording refined and PDF rebuilt.
 
 ## Objective
 Keep Sam Bock's résumé current, emphasizing professional experience and the desired AI/ML direction.
 
 ## Decisions
-Use Software Engineer for Apple, June 2025–present. Lead with continuous-delivery ownership, service-mesh research/architecture, backend contributions and production operations. Delivery duration of 25–30 minutes is an approximate user estimate, not a measured improvement. Omit restricted work and unconfirmed launch claims. Keep earlier AI/ML research visible and reduce unrelated personal projects.
+Use Software Engineer for Apple, June 2025–present. Lead with CI/CD and developer infrastructure, accurately scoped to deployment-layer ownership, service-mesh research/architecture, backend contributions and production operations. Delivery duration of 25–30 minutes is an approximate user estimate, not a measured improvement. Omit restricted work and unconfirmed launch claims. Keep earlier AI/ML research visible and reduce unrelated personal projects.
 
 ## Current state
 resume.tex and resume.pdf updated. Lockheed software internship ends June 2025, cross-checked against LinkedIn's aggregate June 2023–June 2025 internship entry; earlier research and June 2024 software-role start retained from the original résumé. Existing contact details retained. Compile with Tectonic 0.17.0: `tectonic resume.tex`.
