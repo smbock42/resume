@@ -1,7 +1,7 @@
 # Status
 
 ## Updated
-2026-09-13 — Apple CI/CD wording refined and PDF rebuilt.
+2026-09-13 — Education added from user-confirmed degree subject and graduation year; PDF rebuilt.
 
 ## Objective
 Keep Sam Bock's résumé current, emphasizing professional experience and the desired AI/ML direction.
@@ -16,4 +16,4 @@ resume.tex and resume.pdf updated. Lockheed software internship ends June 2025, 
 Tectonic compilation passed. PDF is one page; rendered with PyMuPDF and visually inspected. Text extraction includes Apple, dates, all experience, project and skill sections without clipping.
 
 ## Next steps
-Confirm current contact details before distributing for applications. Education was absent in the original résumé and has not been added in this Apple update.
+Confirm current contact details before distributing for applications. Education now lists California Polytechnic State University, San Luis Obispo, Computer Science, 2025, as confirmed by the user.
