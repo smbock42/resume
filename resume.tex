@@ -10,20 +10,19 @@
 \setlength{\parindent}{0pt}
 \setlength{\tabcolsep}{0pt}
 \titleformat{\section}{\large\scshape}{}{0pt}{}[\titlerule]
-\titlespacing*{\section}{0pt}{8pt}{5pt}
-\newcommand{\role}[3]{\textbf{#1} -- #2\hfill {\small #3}\par}
-\newcommand{\project}[1]{\par\vspace{2pt}\hspace{8pt}{\small\textbf{#1}}\par}
-\newenvironment{points}{\begin{itemize}[leftmargin=13pt,itemsep=2pt,topsep=3pt,parsep=0pt]\small}{\end{itemize}}
+\titlespacing*{\section}{0pt}{7pt}{4pt}
+\newcommand{\role}[3]{\hspace{10pt}\textbf{#2}\hfill {\small #3}\par\hspace{10pt}{\small\textit{#1}}\par}
+\newcommand{\project}[1]{\par\vspace{3pt}\hspace{23pt}{\small\textbf{#1}}\par}
+\newenvironment{points}{\begin{itemize}[leftmargin=27pt,label=$\circ$,labelsep=5pt,itemsep=2pt,topsep=3pt,parsep=0pt]\fontsize{10}{11}\selectfont}{\end{itemize}}
 \begin{document}
 \begin{center}
-{\Huge\scshape Sam Bock}\\[4pt]
+{\LARGE\bfseries Sam Bock}\\[4pt]
 {\small\href{mailto:sam@sambock.dev}{sam@sambock.dev} $|$ 909-609-9291 $|$ \href{https://sambock.dev}{sambock.dev} $|$ \href{https://www.linkedin.com/in/smbock42}{linkedin.com/in/smbock42} $|$ \href{https://github.com/smbock42}{github.com/smbock42}}
 \end{center}
 \vspace{-7pt}
 
 \section{Experience}
-\role{Apple}{Software Engineer}{June 2025 -- Present}
-{\small IS\&T, ETS Emerging Tech}
+\role{Apple -- IS\&T, ETS Emerging Tech}{Software Engineer}{June 2025 -- Present}
 \project{API Hub | Enterprise API Platform}
 \begin{points}
 \item Designed and built a multi-tenant service mesh with a custom control plane and dynamic Envoy sidecars. Integrated API Hub access policies with routing and ingress/egress filtering; built OpenTelemetry/Jaeger observability and a UI for live topology, traces, logs, and metrics.
@@ -70,8 +69,10 @@
 \textbf{California Polytechnic State University, San Luis Obispo}\hfill 2025\\
 {\small Computer Science}
 
-\section{Selected Project}
-{\small\textbf{Homelab} -- Operate a Proxmox homelab hosting self-managed applications and agents.}
+\section{Projects}
+\begin{points}
+\item \textbf{Homelab:} Operate a Proxmox homelab hosting self-managed applications and agents.
+\end{points}
 
 \section{Technical Skills}
 {\small
