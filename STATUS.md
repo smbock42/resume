@@ -7,7 +7,7 @@
 Present professional experience clearly for an engineering referral, with accurate ownership and project context.
 
 ## Decisions
-Employers and roles share the main left edge. Company names are bold upright text, never italic. Named projects indent 14pt under their employer; their explanations indent 28pt. Roles without named projects have direct bullets at 14pt. This supersedes prior flat-heading alignment changes. Preserve one page, readable bold dates, confirmed cum laude, current content and Projects heading. Restricted work remains generic without its name, purpose, geography or compliance context.
+Employers and roles share the main left edge. Company names are bold upright text, never italic. Named projects indent 14pt under their employer; their explanations indent 28pt. Roles without named projects have solid black direct bullets at 14pt. Named project explanations retain hollow-circle bullets at 28pt. This supersedes prior flat-heading alignment changes. Preserve one page, readable bold dates, confirmed cum laude, current content and Projects heading. Restricted work remains generic without its name, purpose, geography or compliance context.
 
 ## Current state
 PR #1 merged as 61dd3cf; validation is active on main: pinned Tectonic 0.17.0/v33 bundle and PyMuPDF, compile/layout/freshness checks, and uploaded PDF/PNG/log artifacts. Workflow runs read-only on PRs/main/manual dispatch. Website v0.5.0 independently adds runtime fetching of main/resume.pdf; no branch-rule changes are included.
