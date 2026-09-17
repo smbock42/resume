@@ -7,7 +7,7 @@
 Present professional experience clearly for an engineering referral, with accurate ownership and project context.
 
 ## Decisions
-Keep one page with experience first and education immediately below experience, per latest user direction. Group Enterprise API Platform and Production Reliability Platform beneath Apple; mesh, CI/CD and backend/gateway work belong to Enterprise API Platform. Emphasize configurable deployment targets (EKS and other cloud instances), selectable deployment strategies and per-component versions. Keep deployment architecture separate from build-once/promote-many release automation. The 25–30-minute duration is an approximate user estimate, not a measured improvement. Restricted work may be represented only by generic engineering tasks, without its name, purpose, geography or compliance context. Exclude customer migration, SSR and unconfirmed production-launch claims.
+Employers and roles share the main left edge. Company names are bold upright text, never italic. Named projects indent 14pt under their employer; their explanations indent 28pt. Roles without named projects have direct bullets at 14pt. This supersedes prior flat-heading alignment changes. Preserve one page, readable bold dates, confirmed cum laude, current content and Projects heading. Restricted work remains generic without its name, purpose, geography or compliance context.
 
 ## Current state
 PR #1 merged as 61dd3cf; validation is active on main: pinned Tectonic 0.17.0/v33 bundle and PyMuPDF, compile/layout/freshness checks, and uploaded PDF/PNG/log artifacts. Workflow runs read-only on PRs/main/manual dispatch. Website v0.5.0 independently adds runtime fetching of main/resume.pdf; no branch-rule changes are included.
@@ -17,6 +17,7 @@ resume.tex and resume.pdf include the experience-first hierarchy and separate ne
 Lockheed software internship end June 2025 was cross-checked with LinkedIn; other role dates remain as previously verified. Compile with Tectonic 0.17.0: `tectonic resume.tex`.
 
 ## Verification
+Latest hierarchy repair: pinned compilation and PDF layout/freshness checks pass. Full one-page render inspected: every employer returns to main left edge, named Apple projects nest beneath it and explanations nest one further level. Company italics removed; no content claims changed. Older alignment notes below are historical and superseded.
 User clarified horizontal indentation, not vertical spacing. Removed extra project-heading indent (23pt → 10pt) and restored original 3pt vertical spacing. Measured role and three Apple project headings at x=53.163pt; one-page PDF checks and visual inspection pass. Previous vertical-spacing interpretation below is superseded.
 Latest refinement: compared older LaTeX history and measured heading coordinates; horizontal project alignment was consistent. Removed the first project’s extra 3pt leading gap, enlarged experience dates to 11pt bold, retained other layout. Pinned compilation/PDF checks pass, one Letter page; final full-page render inspected.
 Latest formatting correction merged as b17497d via PR #2. Hosted run 35196539074 passed. PDF is 29585 bytes, one Letter page, with 10pt body text. Full rendered page visually inspected after final Projects rename; earlier hash below is historical. User explicitly preferred the supplied older formatting over the previous flat hierarchy.
