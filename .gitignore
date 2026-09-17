@@ -1,4 +1,6 @@
 ## Core latex/pdflatex auxiliary files:
+build/
+__pycache__/
 *.aux
 *.lof
 *.log
