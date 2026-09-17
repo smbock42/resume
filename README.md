@@ -33,4 +33,4 @@ The workflow has read-only repository permissions and does not publish or modify
 
 ## Website relationship
 
-The website currently bundles this PDF and a rendered image in its own release. These checks ensure this repository's PDF is current; they do not yet synchronize website assets automatically. See the website's `docs/resume.md` for the current update procedure.
+The website fetches `https://raw.githubusercontent.com/smbock42/resume/main/resume.pdf` at request time for its preview and download. Merge both the source and rebuilt PDF into main, then refresh the website to see the updated document; no website build or release is needed. These checks ensure the committed PDF matches its source.
