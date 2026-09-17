@@ -28,10 +28,11 @@
 \role[IS\&T, ETS Emerging Tech]{Apple}{Software Engineer}{Jun 2025 -- Present}
 \project{Enterprise API Platform | Enterprise API Platform}
 \begin{points}[28pt]{$\circ$}
-\item Designed and built a multi-tenant service mesh with a custom control plane and dynamic Envoy sidecars. Integrated Enterprise API Platform access policies with routing and ingress/egress filtering; built OpenTelemetry/Jaeger observability and a UI for live topology, traces, logs, and metrics.
-\item Architected configurable CI/CD deployment pipelines targeting EKS and other cloud instances, with selectable deployment strategies and per-component versions.
-\item Owned build-once/promote-many delivery with ephemeral regression environments and promotion/rollback across dev, test, and production. Automated tag-to-deployment in approximately 25--30 minutes, including full regression testing, with no manual commands.
-\item Built backend APIs and hardened gateway authentication for a company-wide platform unifying API discovery, provider and consumer onboarding, and access management.
+\item Built a pre-production multi-tenant service mesh with a Go control plane and dynamic Envoy sidecars. Delivered approval-driven cross-cluster routing over gRPC, token revocation, and a live topology and tracing UI.
+\item Owned configurable build-once/promote-many CI/CD targeting EKS and other cloud instances. Gated deployment on matching immutable images and charts, with per-component versions, promotion, and rollback.
+\item Automated full-stack regression environments with snapshot-restored databases and resource cleanup; a verified provision, API/UI regression, and teardown run completed in approximately 17 minutes.
+\item Reduced a 2,543-test backend suite from 170 seconds to 16.5 seconds by isolating JVM-dependent tests and reusing forks, preserving test count and line coverage.
+\item Implemented server-side API specification validation, constrained proxy routing, and per-environment machine-to-machine gateway authentication within a shared backend codebase.
 \end{points}
 \project{Production Reliability Platform | Diagnostic Sanitization}
 \begin{points}[28pt]{$\circ$}
@@ -40,7 +41,7 @@
 
 \project{Observability}
 \begin{points}[28pt]{$\circ$}
-\item Develop OpenTelemetry instrumentation and collector-to-ClickHouse telemetry pipelines, with UI queries and views for traces, logs, metrics, and service topology.
+\item Built OpenTelemetry instrumentation and telemetry query APIs with enforced attribute redaction, bounded-cardinality metrics, and end-to-end validation.
 \end{points}
 
 \vspace{2pt}
@@ -70,7 +71,7 @@
 
 \section{Education}
 \textbf{California Polytechnic State University, San Luis Obispo}\hfill\resumedate{2025}\\
-{\small Computer Science | Cum Laude}
+{\small Bachelor of Science in Computer Science | Cum Laude}
 
 \section{Projects}
 \begin{points}{$\circ$}
@@ -79,7 +80,7 @@
 
 \section{Technical Skills}
 {\small
-\textbf{Languages:} Python, TypeScript, SQL, Java, C, C++\\
+\textbf{Languages:} Go, Python, TypeScript, SQL, Java, C, C++\\
 \textbf{Systems \& Web:} Kubernetes, EKS, Docker, Envoy, Spinnaker, OpenTelemetry, Jaeger, Linux, React, Next.js, Node.js\\
 \textbf{AI/ML:} TensorFlow, Keras, OpenCV, Jupyter
 }
