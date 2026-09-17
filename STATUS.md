@@ -17,7 +17,7 @@ resume.tex and resume.pdf include the approved hierarchy and separate neutral ob
 Lockheed software internship end June 2025 was cross-checked with LinkedIn; other role dates remain as previously verified. Compile with Tectonic 0.17.0: `tectonic resume.tex`.
 
 ## Verification
-Nine validation regression fixtures pass, including intentional failures for stale PDF content, changed link targets, margin overflow, undersized text, wrong paper and an extra page. The real current resume recompiles and passes all checks without changing its committed PDF. GitHub PR verification is pending.
+Nine validation regression fixtures pass, including intentional failures for stale PDF content, changed link targets, margin overflow, undersized text, wrong paper and an extra page. The real current resume recompiles and passes all checks without changing its committed PDF. GitHub PR #1 run 35191938177 passed on a clean hosted runner in 28 seconds, including compilation/freshness checks and review-artifact upload. The PR remains open; checks are not yet merged or configured as required branch protection.
 
 Tectonic compilation succeeded without layout warnings. PDF remains one page with education preceding experience, both Apple project headings and configurable CI/CD details present. Final rendered page visually inspected for hierarchy, wrapping, margins and readability. Email link verified. Git diff whitespace check passed.
 
