@@ -1,7 +1,7 @@
 # Status
 
 ## Updated
-2026-09-17 — API Hub leading gap tightened, dates enlarged/bold, and confirmed cum laude added.
+2026-09-17 — Project heading left alignment corrected; date readability and cum laude retained.
 
 ## Objective
 Present professional experience clearly for an engineering referral, with accurate ownership and project context.
@@ -17,6 +17,7 @@ resume.tex and resume.pdf include the experience-first hierarchy and separate ne
 Lockheed software internship end June 2025 was cross-checked with LinkedIn; other role dates remain as previously verified. Compile with Tectonic 0.17.0: `tectonic resume.tex`.
 
 ## Verification
+User clarified horizontal indentation, not vertical spacing. Removed extra project-heading indent (23pt → 10pt) and restored original 3pt vertical spacing. Measured role and three Apple project headings at x=53.163pt; one-page PDF checks and visual inspection pass. Previous vertical-spacing interpretation below is superseded.
 Latest refinement: compared older LaTeX history and measured heading coordinates; horizontal project alignment was consistent. Removed the first project’s extra 3pt leading gap, enlarged experience dates to 11pt bold, retained other layout. Pinned compilation/PDF checks pass, one Letter page; final full-page render inspected.
 Latest formatting correction merged as b17497d via PR #2. Hosted run 35196539074 passed. PDF is 29585 bytes, one Letter page, with 10pt body text. Full rendered page visually inspected after final Projects rename; earlier hash below is historical. User explicitly preferred the supplied older formatting over the previous flat hierarchy.
 Current PDF is one page, 23047 bytes, SHA-256 44828a73a11c098332ebd30615f76c2926cffc367639964a08560d48682d750d. Public website delivered these bytes and rendered the new ordering after GitHub raw propagation, without a website rebuild. Independent visual review found no overlap or clipping.
