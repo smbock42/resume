@@ -1,23 +1,21 @@
 # Status
 
 ## Updated
-2026-09-13 — Education added from user-confirmed degree subject and graduation year; PDF rebuilt.
+2026-09-16 — Approved resume hierarchy refined; neutral observability work added and verified.
 
 ## Objective
-Keep Sam Bock's résumé current, emphasizing professional experience and the desired AI/ML direction.
+Present professional experience clearly for an engineering referral, with accurate ownership and project context.
 
 ## Decisions
-Use Software Engineer for Apple, June 2025–present. Lead with CI/CD and developer infrastructure, accurately scoped to deployment-layer ownership, custom service-mesh implementation, backend contributions and production operations. Delivery duration of 25–30 minutes is an approximate user estimate, not a measured improvement. Omit restricted work and unconfirmed launch claims. Keep earlier AI/ML research visible and reduce unrelated personal projects.
+Keep one page with education immediately after contact details. Group API Hub and Stratos3S beneath Apple; mesh, CI/CD and backend/gateway work belong to API Hub. Emphasize configurable deployment targets (EKS and other cloud instances), selectable deployment strategies and per-component versions. Keep deployment architecture separate from build-once/promote-many release automation. The 25–30-minute duration is an approximate user estimate, not a measured improvement. Restricted work may be represented only by generic engineering tasks, without its name, purpose, geography or compliance context. Exclude customer migration, SSR and unconfirmed production-launch claims.
 
 ## Current state
-Apple bullets now lead with custom mesh implementation, followed by CI/CD architecture, backend/gateway security, and production engineering. Removed customer migration and server-side rendering claims from the resume at user request. Platform capabilities describe team context, not sole ownership.
+resume.tex and resume.pdf include the approved hierarchy and separate neutral observability entry. Template now uses consistent margins, employer-first headings, indented project subheadings and plain bullets. Education is Cal Poly San Luis Obispo, Computer Science, 2025; user has not specified the formal degree type. Contact email is the user-confirmed personal-domain address. Older roles are condensed, keeping Lockheed full-stack ownership, ML research and SOC automation impact. General Kubernetes maintenance was omitted to keep project attribution clear.
 
-User clarified ownership of a custom multi-tenant control plane and dynamic Envoy sidecars, with API Hub access updates, traffic routing, ingress/egress filtering, and UI metrics. Resume now emphasizes the implementation instead of vendor research; production status is not asserted.
-
-resume.tex and resume.pdf updated. Lockheed software internship ends June 2025, cross-checked against LinkedIn's aggregate June 2023–June 2025 internship entry; earlier research and June 2024 software-role start retained from the original résumé. Contact email updated to the user-requested personal-domain address. Compile with Tectonic 0.17.0: `tectonic resume.tex`.
+Lockheed software internship end June 2025 was cross-checked with LinkedIn; other role dates remain as previously verified. Compile with Tectonic 0.17.0: `tectonic resume.tex`.
 
 ## Verification
-Tectonic compilation passed. PDF is one page; rendered with PyMuPDF and visually inspected. Text extraction includes Apple, dates, all experience, project and skill sections without clipping.
+Tectonic compilation succeeded without layout warnings. PDF remains one page with education preceding experience, both Apple project headings and configurable CI/CD details present. Final rendered page visually inspected for hierarchy, wrapping, margins and readability. Email link verified. Git diff whitespace check passed.
 
 ## Next steps
-Education now lists California Polytechnic State University, San Luis Obispo, Computer Science, 2025, as confirmed by the user.
+The user approved proceeding with resume, LinkedIn and website updates. Work-laptop summary may later supply stronger verified technical detail and metrics.
