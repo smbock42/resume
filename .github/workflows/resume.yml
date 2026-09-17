@@ -1,0 +1,52 @@
+name: Resume checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: resume-checks-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Compile and validate resume
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned compiler and PDF tooling
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --output "$RUNNER_TEMP/tectonic.tar.gz" \
+            'https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%400.17.0/tectonic-0.17.0-x86_64-unknown-linux-musl.tar.gz'
+          echo "8533d07f9ccbd7a65824b9e0459041bca34af1eb33daba48f59215593753a3b7  $RUNNER_TEMP/tectonic.tar.gz" | sha256sum --check
+          mkdir -p "$RUNNER_TEMP/resume-tools"
+          tar -xzf "$RUNNER_TEMP/tectonic.tar.gz" -C "$RUNNER_TEMP/resume-tools" tectonic
+          echo "$RUNNER_TEMP/resume-tools" >> "$GITHUB_PATH"
+          python -m pip install -r requirements-ci.txt
+      - name: Test the validation rules
+        run: python -m unittest discover -s tests -v
+      - name: Compile from source
+        run: bash scripts/build_resume.sh
+      - name: Validate layout and committed PDF
+        run: python scripts/check_resume.py
+      - name: Upload PDF, previews and build diagnostics
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: resume-review-${{ github.sha }}
+          path: build/
+          if-no-files-found: warn
+          retention-days: 30
