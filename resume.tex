@@ -12,7 +12,9 @@
 \titleformat{\section}{\large\scshape}{}{0pt}{}[\titlerule]
 \titlespacing*{\section}{0pt}{7pt}{4pt}
 % Employers and roles: level 0; named projects: level 1; their bullets: level 2.
-\newcommand{\role}[4][]{\noindent\textbf{#2}\hfill {\normalsize\textbf{#4}}\par{\small #3\if\relax\detokenize{#1}\relax\else\enspace|\enspace#1\fi}\par}
+\newcommand{\resumedate}[1]{{\normalsize\normalfont #1}}
+\newcommand{\position}[3][]{\noindent{\small #2\if\relax\detokenize{#1}\relax\else\enspace|\enspace#1\fi}\hfill\resumedate{#3}\par}
+\newcommand{\role}[4][]{\noindent\textbf{#2}\par\position[#1]{#3}{#4}}
 \newcommand{\project}[1]{\par\vspace{3pt}\noindent\hspace*{14pt}{\small\textbf{#1}}\par}
 \newenvironment{points}[2][14pt]{\begin{itemize}[leftmargin=#1,label=#2,labelsep=5pt,itemsep=2pt,topsep=2pt,parsep=0pt]\fontsize{10}{11}\selectfont}{\end{itemize}}
 \begin{document}
@@ -23,7 +25,7 @@
 \vspace{-7pt}
 
 \section{Experience}
-\role[IS\&T, ETS Emerging Tech]{Apple}{Software Engineer}{June 2025 -- Present}
+\role[IS\&T, ETS Emerging Tech]{Apple}{Software Engineer}{Jun 2025 -- Present}
 \project{API Hub | Enterprise API Platform}
 \begin{points}[28pt]{$\circ$}
 \item Designed and built a multi-tenant service mesh with a custom control plane and dynamic Envoy sidecars. Integrated API Hub access policies with routing and ingress/egress filtering; built OpenTelemetry/Jaeger observability and a UI for live topology, traces, logs, and metrics.
@@ -42,33 +44,33 @@
 \end{points}
 
 \vspace{2pt}
-\role{Lockheed Martin Space}{Software Engineering Intern}{June 2024 -- June 2025}
+\role{Lockheed Martin Space}{Software Engineering Intern}{Jun 2024 -- Jun 2025}
 \begin{points}{\textbullet}
 \item Built an expert search and review-assignment application to replace spreadsheet coordination, owning architecture, UI, backend APIs, server provisioning, security reviews, and deployment.
 \item Integrated data sources with Next.js, TypeScript, Prisma, and Supabase; deployed on Linux behind Nginx.
 \end{points}
 
 \vspace{2pt}
-\role{Lockheed Martin Space}{AI/ML Research Intern}{June 2023 -- Oct 2023}
+\position{AI/ML Research Intern}{Jun 2023 -- Oct 2023}
 \begin{points}{\textbullet}
 \item Researched low-light object detection with TensorFlow, Keras, and OpenCV; developed a custom data loader and evaluated data augmentation and hyperparameter tuning.
 \end{points}
 
 \vspace{2pt}
-\role{HaptX}{IT Engineering Intern}{Mar 2023 -- June 2023}
+\role{HaptX}{IT Engineering Intern}{Mar 2023 -- Jun 2023}
 \begin{points}{\textbullet}
 \item Implemented geographic access restrictions and authentication policies; built login-activity and policy-enforcement analytics with Microsoft Azure and Intune.
 \end{points}
 
 \vspace{2pt}
-\role{Cal Poly ITS}{Junior Security Operations Center Analyst}{June 2022 -- Feb 2023}
+\role{Cal Poly ITS}{Junior Security Operations Center Analyst}{Jun 2022 -- Feb 2023}
 \begin{points}{\textbullet}
 \item Built a Python Slack bot integrated with Splunk SOAR to automate phishing, suspicious-login, and account workflows, reducing analyst processing time from several minutes to under one minute.
 \end{points}
 
 \section{Education}
-\textbf{California Polytechnic State University, San Luis Obispo}\hfill 2025\\
-{\small Computer Science, \textit{cum laude}}
+\textbf{California Polytechnic State University, San Luis Obispo}\hfill\resumedate{2025}\\
+{\small Computer Science | Cum Laude}
 
 \section{Projects}
 \begin{points}{$\circ$}
