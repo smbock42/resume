@@ -1,30 +1,21 @@
 # Status
 
 ## Updated
-2026-09-17 — Project heading left alignment corrected; date readability and cum laude retained.
+2026-09-17 — Typography/date consistency pass and grouped Lockheed roles prepared.
 
 ## Objective
-Present professional experience clearly for an engineering referral, with accurate ownership and project context.
+Maintain a polished one-page engineering resume with accurate ownership, clear hierarchy, and dependable PDF validation.
 
 ## Decisions
-Employers and roles share the main left edge. Company names are bold upright text, never italic. Named projects indent 14pt under their employer; their explanations indent 28pt. Roles without named projects have solid black direct bullets at 14pt. Named project explanations retain hollow-circle bullets at 28pt. This supersedes prior flat-heading alignment changes. Preserve one page, readable bold dates, confirmed cum laude, current content and Projects heading. Restricted work remains generic without its name, purpose, geography or compliance context.
+Bold upright employers share the main left edge; role lines are regular text. Named projects indent 14pt and their hollow-circle explanation bullets indent 28pt. Direct job accomplishments use solid black bullets at 14pt. All dates, including education, use regular 11pt text with aligned right edges and three-letter month abbreviations. Dates belong to individual roles. Lockheed appears once with two separately dated roles; no continuous employment range is implied. Education follows Experience; confirmed honor is styled Cum Laude in upright text. Keep Projects heading and one Homelab entry for now.
+
+Keep approved career content: custom Envoy/control-plane implementation, configurable deployment targets/strategies/component versions, build-once delivery, and approximate 25–30 minute release duration. Do not imply ownership of the whole platform. Restricted work stays generic, with no project name, purpose, geography or compliance context. Degree type remains unspecified; Computer Science graduation in 2025 and Cum Laude are confirmed.
 
 ## Current state
-PR #1 merged as 61dd3cf; validation is active on main: pinned Tectonic 0.17.0/v33 bundle and PyMuPDF, compile/layout/freshness checks, and uploaded PDF/PNG/log artifacts. Workflow runs read-only on PRs/main/manual dispatch. Website v0.5.0 independently adds runtime fetching of main/resume.pdf; no branch-rule changes are included.
-
-resume.tex and resume.pdf include the experience-first hierarchy and separate neutral observability entry. Template now uses consistent margins, bold role headings, italic employer lines beneath, right-aligned dates, indented project subheadings and hanging open-circle bullets. Education is Cal Poly San Luis Obispo, Computer Science, 2025; user has not specified the formal degree type. Cum laude confirmed by the user and added beside Computer Science. Contact email is the user-confirmed personal-domain address. Older roles are condensed, keeping Lockheed full-stack ownership, ML research and SOC automation impact. General Kubernetes maintenance was omitted to keep project attribution clear.
-
-Lockheed software internship end June 2025 was cross-checked with LinkedIn; other role dates remain as previously verified. Compile with Tectonic 0.17.0: `tectonic resume.tex`.
+resume.tex and rebuilt resume.pdf contain the consistency pass. PR compilation/layout/freshness validation is active on main. Website fetches main/resume.pdf at runtime; no website rebuild needed, though GitHub raw propagation can take a few minutes. Earlier flat-hierarchy and bold-date choices are superseded by these decisions.
 
 ## Verification
-Latest hierarchy repair: pinned compilation and PDF layout/freshness checks pass. Full one-page render inspected: every employer returns to main left edge, named Apple projects nest beneath it and explanations nest one further level. Company italics removed; no content claims changed. Older alignment notes below are historical and superseded.
-User clarified horizontal indentation, not vertical spacing. Removed extra project-heading indent (23pt → 10pt) and restored original 3pt vertical spacing. Measured role and three Apple project headings at x=53.163pt; one-page PDF checks and visual inspection pass. Previous vertical-spacing interpretation below is superseded.
-Latest refinement: compared older LaTeX history and measured heading coordinates; horizontal project alignment was consistent. Removed the first project’s extra 3pt leading gap, enlarged experience dates to 11pt bold, retained other layout. Pinned compilation/PDF checks pass, one Letter page; final full-page render inspected.
-Latest formatting correction merged as b17497d via PR #2. Hosted run 35196539074 passed. PDF is 29585 bytes, one Letter page, with 10pt body text. Full rendered page visually inspected after final Projects rename; earlier hash below is historical. User explicitly preferred the supplied older formatting over the previous flat hierarchy.
-Current PDF is one page, 23047 bytes, SHA-256 44828a73a11c098332ebd30615f76c2926cffc367639964a08560d48682d750d. Public website delivered these bytes and rendered the new ordering after GitHub raw propagation, without a website rebuild. Independent visual review found no overlap or clipping.
-Nine validation regression fixtures pass, including intentional failures for stale PDF content, changed link targets, margin overflow, undersized text, wrong paper and an extra page. The real current resume recompiles and passes all checks without changing its committed PDF. GitHub PR #1 run 35191938177 passed on a clean hosted runner in 28 seconds, including compilation/freshness checks and review-artifact upload. PR #1 is merged. Final PR run 35193208896 and main run 35193347885 passed; branch protection remains unchanged.
-
-Tectonic compilation succeeded without layout warnings. PDF remains one page with education following experience, both Apple project headings and configurable CI/CD details present. Final rendered page visually inspected for hierarchy, wrapping, margins and readability. Email link verified. Git diff whitespace check passed.
+Pinned Tectonic compilation and PDF checks pass: one Letter page, searchable text, margins/font sizes and rebuilt PDF parity. Final full-page render visually inspected for hierarchy, spacing, wrapping and typography. All six date lines have identical regular font/size and right edges within 0.1pt. Lockheed company heading occurs once; both roles retain original dates. No career accomplishments changed.
 
 ## Next steps
-The user approved proceeding with resume, LinkedIn and website updates. Work-laptop summary may later supply stronger verified technical detail and metrics.
+Finish PR validation and merge. User may provide additional projects and sanitized work-summary evidence later.
