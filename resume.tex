@@ -11,9 +11,10 @@
 \setlength{\tabcolsep}{0pt}
 \titleformat{\section}{\large\scshape}{}{0pt}{}[\titlerule]
 \titlespacing*{\section}{0pt}{7pt}{4pt}
-\newcommand{\role}[3]{\hspace{10pt}\textbf{#2}\hfill {\normalsize\textbf{#3}}\par\hspace{10pt}{\small\textit{#1}}\par}
-\newcommand{\project}[1]{\par\vspace{3pt}\noindent\hspace*{10pt}{\small\textbf{#1}}\par}
-\newenvironment{points}{\begin{itemize}[leftmargin=27pt,label=$\circ$,labelsep=5pt,itemsep=2pt,topsep=3pt,parsep=0pt]\fontsize{10}{11}\selectfont}{\end{itemize}}
+% Employers and roles: level 0; named projects: level 1; their bullets: level 2.
+\newcommand{\role}[4][]{\noindent\textbf{#2}\hfill {\normalsize\textbf{#4}}\par{\small #3\if\relax\detokenize{#1}\relax\else\enspace|\enspace#1\fi}\par}
+\newcommand{\project}[1]{\par\vspace{3pt}\noindent\hspace*{14pt}{\small\textbf{#1}}\par}
+\newenvironment{points}[1][14pt]{\begin{itemize}[leftmargin=#1,label=$\circ$,labelsep=5pt,itemsep=2pt,topsep=2pt,parsep=0pt]\fontsize{10}{11}\selectfont}{\end{itemize}}
 \begin{document}
 \begin{center}
 {\LARGE\bfseries Sam Bock}\\[4pt]
@@ -22,21 +23,21 @@
 \vspace{-7pt}
 
 \section{Experience}
-\role{Apple -- IS\&T, ETS Emerging Tech}{Software Engineer}{June 2025 -- Present}
+\role[IS\&T, ETS Emerging Tech]{Apple}{Software Engineer}{June 2025 -- Present}
 \project{Enterprise API Platform | Enterprise API Platform}
-\begin{points}
+\begin{points}[28pt]
 \item Designed and built a multi-tenant service mesh with a custom control plane and dynamic Envoy sidecars. Integrated Enterprise API Platform access policies with routing and ingress/egress filtering; built OpenTelemetry/Jaeger observability and a UI for live topology, traces, logs, and metrics.
 \item Architected configurable CI/CD deployment pipelines targeting EKS and other cloud instances, with selectable deployment strategies and per-component versions.
 \item Owned build-once/promote-many delivery with ephemeral regression environments and promotion/rollback across dev, test, and production. Automated tag-to-deployment in approximately 25--30 minutes, including full regression testing, with no manual commands.
 \item Built backend APIs and hardened gateway authentication for a company-wide platform unifying API discovery, provider and consumer onboarding, and access management.
 \end{points}
 \project{Production Reliability Platform | Diagnostic Sanitization}
-\begin{points}
+\begin{points}[28pt]
 \item Maintain a system that automatically removes personal information from diagnostic reports. Collaborate with the issue tracking team on production fixes and migration to a managed cluster.
 \end{points}
 
 \project{Observability}
-\begin{points}
+\begin{points}[28pt]
 \item Develop OpenTelemetry instrumentation and collector-to-ClickHouse telemetry pipelines, with UI queries and views for traces, logs, metrics, and service topology.
 \end{points}
 
